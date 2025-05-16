@@ -22,108 +22,324 @@
 
             <h2>Estrutura Básica</h2>
             <ul>
-                <li><strong><!DOCTYPE html></strong>: Declara que o documento é HTML5. Exemplo: <code><!DOCTYPE html></code> (sem fechamento).</li>
-                <li><strong><html></strong>: Contém todo o conteúdo. Define idioma com <code>lang</code>. Exemplo: <code><html lang="pt-BR">...</html></code>.</li>
-                <li><strong><head></strong>: Inclui metadados (título, CSS). Exemplo: <code><head><title>Minha Página</title></head></code>.</li>
-                <li><strong><body></strong>: Conteúdo visível (textos, imagens). Exemplo: <code><body><h1>Olá</h1></body></code>.</li>
+                <li>
+                    <strong>&lt;!DOCTYPE html&gt;:</strong>
+                    <p>Declara que o documento é HTML5. Vai no topo.</p>
+                    <p>Exemplo: <code>&lt;!DOCTYPE html&gt;</code> (sem fechamento).</p>
+                </li>
+                <li>
+                    <strong>&lt;html&gt;:</strong>
+                    <p>Contém todo o conteúdo da página. Define idioma com <code>lang</code>.</p>
+                    <p>Exemplo: <code>&lt;html lang="pt-BR"&gt;...&lt;/html&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;head&gt;:</strong>
+                    <p>Inclui metadados (título, CSS, etc.).</p>
+                    <p>Exemplo: <code>&lt;head&gt;&lt;title&gt;Minha Página&lt;/title&gt;&lt;/head&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;body&gt;:</strong>
+                    <p>Contém o conteúdo visível (textos, imagens, etc.).</p>
+                    <p>Exemplo: <code>&lt;body&gt;&lt;h1&gt;Olá&lt;/h1&gt;&lt;/body&gt;</code>.</p>
+                </li>
             </ul>
 
-            <h2>Metadados (dentro de <head>)</h2>
+            <h2>Metadados (dentro de &lt;head&gt;)</h2>
             <ul>
-                <li><strong><meta></strong>: Define metadados (codificação, responsividade). Exemplo: <code><meta charset="UTF-8"></code>, <code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code>.</li>
-                <li><strong><title></strong>: Título da aba. Exemplo: <code><title>Meu Site</title></code>.</li>
-                <li><strong><link></strong>: Conecta arquivos CSS. Exemplo: <code><link rel="stylesheet" href="styles.css"></code>.</li>
-                <li><strong><script></strong>: Inclui JavaScript. Exemplo: <code><script src="script.js"></script></code>.</li>
+                <li>
+                    <strong>&lt;meta&gt;:</strong>
+                    <p>Define metadados, como codificação ou responsividade.</p>
+                    <p>Exemplo: <code>&lt;meta charset="UTF-8"&gt;</code>, <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;title&gt;:</strong>
+                    <p>Título da aba do navegador.</p>
+                    <p>Exemplo: <code>&lt;title&gt;Meu Site&lt;/title&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;link&gt;:</strong>
+                    <p>Conecta arquivos CSS.</p>
+                    <p>Exemplo: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;script&gt;:</strong>
+                    <p>Inclui JavaScript.</p>
+                    <p>Exemplo: <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Conteúdo de Texto</h2>
             <ul>
-                <li><strong><h1></strong> a <strong><h6></strong>: Títulos, do maior ao menor. Exemplo: <code><h1>Título Principal</h1></code>.</li>
-                <li><strong><p></strong>: Parágrafo. Exemplo: <code><p>Este é um texto.</p></code>.</li>
-                <li><strong><strong></strong>: Negrito (semântico). Exemplo: <code><strong>Atenção!</strong></code>.</li>
-                <li><strong><em></strong>: Itálico (semântico). Exemplo: <code><em>Ênfase</em></code>.</li>
-                <li><strong><span></strong>: Agrupa texto para estilização. Exemplo: <code><span class="destaque">Texto</span></code>.</li>
+                <li>
+                    <strong>&lt;h1&gt; a &lt;h6&gt;:</strong>
+                    <p>Títulos, do maior ao menor.</p>
+                    <p>Exemplo: <code>&lt;h1&gt;Título Principal&lt;/h1&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;p&gt;:</strong>
+                    <p>Parágrafo.</p>
+                    <p>Exemplo: <code>&lt;p&gt;Este é um texto.&lt;/p&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;strong&gt;:</strong>
+                    <p>Texto em negrito (semântico).</p>
+                    <p>Exemplo: <code>&lt;strong&gt;Atenção!&lt;/strong&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;em&gt;:</strong>
+                    <p>Texto em itálico (semântico).</p>
+                    <p>Exemplo: <code>&lt;em&gt;Ênfase&lt;/em&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;span&gt;:</strong>
+                    <p>Agrupa texto para estilização.</p>
+                    <p>Exemplo: <code>&lt;span class="destaque"&gt;Texto&lt;/span&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Listas</h2>
             <ul>
-                <li><strong><ul></strong>: Lista não ordenada (marcadores). Exemplo: <code><ul><li>Item 1</li><li>Item 2</li></ul></code>.</li>
-                <li><strong><ol></strong>: Lista ordenada (números). Exemplo: <code><ol><li>Passo 1</li><li>Passo 2</li></ol></code>.</li>
-                <li><strong><li></strong>: Item de lista. Exemplo: <code><li>Maçã</li></code>.</li>
+                <li>
+                    <strong>&lt;ul&gt;:</strong>
+                    <p>Lista não ordenada (marcadores).</p>
+                    <p>Exemplo: <code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;ol&gt;:</strong>
+                    <p>Lista ordenada (números).</p>
+                    <p>Exemplo: <code>&lt;ol&gt;&lt;li&gt;Passo 1&lt;/li&gt;&lt;li&gt;Passo 2&lt;/li&gt;&lt;/ol&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;li&gt;:</strong>
+                    <p>Item de lista.</p>
+                    <p>Exemplo: <code>&lt;li&gt;Maçã&lt;/li&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Links e Mídia</h2>
             <ul>
-                <li><strong><a></strong>: Cria links. Exemplo: <code><a href="https://google.com">Google</a></code>, <code><a href="#contato">Contato</a></code>.</li>
-                <li><strong><img></strong>: Insere imagens. Exemplo: <code><img src="foto.jpg" alt="Descrição"></code>.</li>
-                <li><strong><video></strong>: Incorpora vídeos. Exemplo: <code><video src="video.mp4" controls></video></code>.</li>
-                <li><strong><audio></strong>: Incorpora áudios. Exemplo: <code><audio src="audio.mp3" controls></audio></code>.</li>
+                <li>
+                    <strong>&lt;a&gt;:</strong>
+                    <p>Cria links.</p>
+                    <p>Exemplo: <code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code>, <code>&lt;a href="#contato"&gt;Contato&lt;/a&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;img&gt;:</strong>
+                    <p>Insere imagens.</p>
+                    <p>Exemplo: <code>&lt;img src="foto.jpg" alt="Descrição"&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;video&gt;:</strong>
+                    <p>Incorpora vídeos.</p>
+                    <p>Exemplo: <code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;audio&gt;:</strong>
+                    <p>Incorpora áudios.</p>
+                    <p>Exemplo: <code>&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Estrutura Semântica</h2>
             <ul>
-                <li><strong><header></strong>: Cabeçalho. Exemplo: <code><header><h1>Meu Site</h1></header></code>.</li>
-                <li><strong><nav></strong>: Menu de navegação. Exemplo: <code><nav><a href="#home">Home</a></nav></code>.</li>
-                <li><strong><main></strong>: Conteúdo principal. Exemplo: <code><main><p>Conteúdo</p></main></code>.</li>
-                <li><strong><section></strong>: Seção temática. Exemplo: <code><section><h2>Sobre</h2></section></code>.</li>
-                <li><strong><article></strong>: Conteúdo independente. Exemplo: <code><article><h2>Post</h2></article></code>.</li>
-                <li><strong><aside></strong>: Conteúdo lateral. Exemplo: <code><aside><p>Publicidade</p></aside></code>.</li>
-                <li><strong><footer></strong>: Rodapé. Exemplo: <code><footer><p>© 2025</p></footer></code>.</li>
+                <li>
+                    <strong>&lt;header&gt;:</strong>
+                    <p>Cabeçalho da página.</p>
+                    <p>Exemplo: <code>&lt;header&gt;&lt;h1&gt;Meu Site&lt;/h1&gt;&lt;/header&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;nav&gt;:</strong>
+                    <p>Menu de navegação.</p>
+                    <p>Exemplo: <code>&lt;nav&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;main&gt;:</strong>
+                    <p>Conteúdo principal.</p>
+                    <p>Exemplo: <code>&lt;main&gt;&lt;p&gt;Conteúdo&lt;/p&gt;&lt;/main&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;section&gt;:</strong>
+                    <p>Seção temática.</p>
+                    <p>Exemplo: <code>&lt;section&gt;&lt;h2&gt;Sobre&lt;/h2&gt;&lt;/section&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;article&gt;:</strong>
+                    <p>Conteúdo independente.</p>
+                    <p>Exemplo: <code>&lt;article&gt;&lt;h2&gt;Post&lt;/h2&gt;&lt;/article&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;aside&gt;:</strong>
+                    <p>Conteúdo lateral.</p>
+                    <p>Exemplo: <code>&lt;aside&gt;&lt;p&gt;Publicidade&lt;/p&gt;&lt;/aside&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;footer&gt;:</strong>
+                    <p>Rodapé.</p>
+                    <p>Exemplo: <code>&lt;footer&gt;&lt;p&gt;© 2025&lt;/p&gt;&lt;/footer&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Formulários</h2>
             <ul>
-                <li><strong><form></strong>: Cria formulários. Exemplo: <code><form action="/enviar"><input type="text"></form></code>.</li>
-                <li><strong><input></strong>: Campo de entrada. Exemplo: <code><input type="text" name="nome" placeholder="Nome"></code>.</li>
-                <li><strong><textarea></strong>: Área de texto. Exemplo: <code><textarea name="mensagem"></textarea></code>.</li>
-                <li><strong><button></strong>: Botão. Exemplo: <code><button type="submit">Enviar</button></code>.</li>
-                <li><strong><label></strong>: Rótulo. Exemplo: <code><label for="nome">Nome:</label><input id="nome"></code>.</li>
+                <li>
+                    <strong>&lt;form&gt;:</strong>
+                    <p>Cria formulários.</p>
+                    <p>Exemplo: <code>&lt;form action="/enviar"&gt;&lt;input type="text"&gt;&lt;/form&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;input&gt;:</strong>
+                    <p>Campo de entrada.</p>
+                    <p>Exemplo: <code>&lt;input type="text" name="nome" placeholder="Nome"&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;textarea&gt;:</strong>
+                    <p>Área de texto.</p>
+                    <p>Exemplo: <code>&lt;textarea name="mensagem"&gt;&lt;/textarea&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;button&gt;:</strong>
+                    <p>Botão.</p>
+                    <p>Exemplo: <code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;label&gt;:</strong>
+                    <p>Rótulo para campos.</p>
+                    <p>Exemplo: <code>&lt;label for="nome"&gt;Nome:&lt;/label&gt;&lt;input id="nome"&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Tabelas</h2>
             <ul>
-                <li><strong><table></strong>: Cria tabela. Exemplo: <code><table><tr><td>Dado</td></tr></table></code>.</li>
-                <li><strong><tr></strong>: Linha. Exemplo: <code><tr><td>1</td></tr></code>.</li>
-                <li><strong><td></strong>: Célula de dados. Exemplo: <code><td>Valor</td></code>.</li>
-                <li><strong><th></strong>: Cabeçalho. Exemplo: <code><th>Nome</th></code>.</li>
+                <li>
+                    <strong>&lt;table&gt;:</strong>
+                    <p>Cria tabela.</p>
+                    <p>Exemplo: <code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Dado&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;tr&gt;:</strong>
+                    <p>Linha da tabela.</p>
+                    <p>Exemplo: <code>&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;td&gt;:</strong>
+                    <p>Célula de dados.</p>
+                    <p>Exemplo: <code>&lt;td&gt;Valor&lt;/td&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;th&gt;:</strong>
+                    <p>Célula de cabeçalho.</p>
+                    <p>Exemplo: <code>&lt;th&gt;Nome&lt;/th&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Outras</h2>
             <ul>
-                <li><strong><div></strong>: Contêiner genérico. Exemplo: <code><div class="container"><p>Conteúdo</p></div></code>.</li>
-                <li><strong><br></strong>: Quebra de linha. Exemplo: <code><p>Linha 1<br>Linha 2</p></code>.</li>
-                <li><strong><hr></strong>: Linha horizontal. Exemplo: <code><hr></code>.</li>
+                <li>
+                    <strong>&lt;div&gt;:</strong>
+                    <p>Contêiner genérico.</p>
+                    <p>Exemplo: <code>&lt;div class="container"&gt;&lt;p&gt;Conteúdo&lt;/p&gt;&lt;/div&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;br&gt;:</strong>
+                    <p>Quebra de linha.</p>
+                    <p>Exemplo: <code>&lt;p&gt;Linha 1&lt;br&gt;Linha 2&lt;/p&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;hr&gt;:</strong>
+                    <p>Linha horizontal.</p>
+                    <p>Exemplo: <code>&lt;hr&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Conteúdo Semântico Avançado</h2>
             <ul>
-                <li><strong><figure></strong>: Agrupa mídia com legenda. Exemplo: <code><figure><img src="foto.jpg" alt="Paisagem"><figcaption>Foto</figcaption></figure></code>.</li>
-                <li><strong><figcaption></strong>: Legenda para figure. Exemplo: <code><figcaption>Descrição</figcaption></code>.</li>
-                <li><strong><details></strong>: Conteúdo expansível. Exemplo: <code><details><summary>Clique</summary><p>Conteúdo</p></details></code>.</li>
-                <li><strong><summary></strong>: Título para details. Exemplo: <code><summary>Ver mais</summary></code>.</li>
+                <li>
+                    <strong>&lt;figure&gt;:</strong>
+                    <p>Agrupa mídia com legenda.</p>
+                    <p>Exemplo: <code>&lt;figure&gt;&lt;img src="foto.jpg" alt="Paisagem"&gt;&lt;figcaption&gt;Foto&lt;/figcaption&gt;&lt;/figure&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;figcaption&gt;:</strong>
+                    <p>Legenda para figure.</p>
+                    <p>Exemplo: <code>&lt;figcaption&gt;Descrição&lt;/figcaption&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;details&gt;:</strong>
+                    <p>Conteúdo expansível.</p>
+                    <p>Exemplo: <code>&lt;details&gt;&lt;summary&gt;Clique&lt;/summary&gt;&lt;p&gt;Conteúdo&lt;/p&gt;&lt;/details&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;summary&gt;:</strong>
+                    <p>Título para details.</p>
+                    <p>Exemplo: <code>&lt;summary&gt;Ver mais&lt;/summary&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Formulários Avançados</h2>
             <ul>
-                <li><strong><select></strong>: Menu dropdown. Exemplo: <code><select name="opcoes"><option value="1">Opção 1</option></select></code>.</li>
-                <li><strong><option></strong>: Item de select. Exemplo: <code><option value="1">Opção 1</option></code>.</li>
-                <li><strong><datalist></strong>: Sugestões para input. Exemplo: <code><input list="sugestoes"><datalist id="sugestoes"><option value="Opção 1"></datalist></code>.</li>
-                <li><strong><output></strong>: Resultados de cálculos. Exemplo: <code><output name="resultado">0</output></code>.</li>
+                <li>
+                    <strong>&lt;select&gt;:</strong>
+                    <p>Menu dropdown.</p>
+                    <p>Exemplo: <code>&lt;select name="opcoes"&gt;&lt;option value="1"&gt;Opção 1&lt;/option&gt;&lt;/select&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;option&gt;:</strong>
+                    <p>Item de select.</p>
+                    <p>Exemplo: <code>&lt;option value="1"&gt;Opção 1&lt;/option&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;datalist&gt;:</strong>
+                    <p>Sugestões para input.</p>
+                    <p>Exemplo: <code>&lt;input list="sugestoes"&gt;&lt;datalist id="sugestoes"&gt;&lt;option value="Opção 1"&gt;&lt;/datalist&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;output&gt;:</strong>
+                    <p>Resultados de cálculos.</p>
+                    <p>Exemplo: <code>&lt;output name="resultado"&gt;0&lt;/output&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Mídia e Gráficos</h2>
             <ul>
-                <li><strong><canvas></strong>: Gráficos com JavaScript. Exemplo: <code><canvas id="meuCanvas" width="200" height="100"></canvas></code>.</li>
-                <li><strong><svg></strong>: Gráficos vetoriais. Exemplo: <code><svg><circle cx="50" cy="50" r="40" fill="blue"></circle></svg></code>.</li>
-                <li><strong><iframe></strong>: Conteúdo externo. Exemplo: <code><iframe src="https://www.youtube.com/embed/VIDEO_ID" width="560" height="315"></iframe></code>.</li>
+                <li>
+                    <strong>&lt;canvas&gt;:</strong>
+                    <p>Gráficos com JavaScript.</p>
+                    <p>Exemplo: <code>&lt;canvas id="meuCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;svg&gt;:</strong>
+                    <p>Gráficos vetoriais.</p>
+                    <p>Exemplo: <code>&lt;svg&gt;&lt;circle cx="50" cy="50" r="40" fill="blue"&gt;&lt;/circle&gt;&lt;/svg&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;iframe&gt;:</strong>
+                    <p>Conteúdo externo.</p>
+                    <p>Exemplo: <code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" width="560" height="315"&gt;&lt;/iframe&gt;</code>.</p>
+                </li>
             </ul>
 
             <h2>Outras</h2>
             <ul>
-                <li><strong><progress></strong>: Barra de progresso. Exemplo: <code><progress value="70" max="100">70%</progress></code>.</li>
-                <li><strong><meter></strong>: Valor em intervalo. Exemplo: <code><meter value="0.6" min="0" max="1">60%</meter></code>.</li>
-                <li><strong><time></strong>: Datas ou horários. Exemplo: <code><time datetime="2025-05-16">16 de Maio de 2025</time></code>.</li>
-                <li><strong><mark></strong>: Destaca texto. Exemplo: <code><mark>Texto destacado</mark></code>.</li>
+                <li>
+                    <strong>&lt;progress&gt;:</strong>
+                    <p>Barra de progresso.</p>
+                    <p>Exemplo: <code>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;meter&gt;:</strong>
+                    <p>Valor em intervalo.</p>
+                    <p>Exemplo: <code>&lt;meter value="0.6" min="0" max="1"&gt;60%&lt;/meter&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;time&gt;:</strong>
+                    <p>Datas ou horários.</p>
+                    <p>Exemplo: <code>&lt;time datetime="2025-05-16"&gt;16 de Maio de 2025&lt;/time&gt;</code>.</p>
+                </li>
+                <li>
+                    <strong>&lt;mark&gt;:</strong>
+                    <p>Destaca texto.</p>
+                    <p>Exemplo: <code>&lt;mark&gt;Texto destacado&lt;/mark&gt;</code>.</p>
+                </li>
             </ul>
         </section>
     </main>
