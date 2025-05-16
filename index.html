@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto</title>
+    <title>Meu Currículo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tags.html">Guia de Tags</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <section id="home">
-        <h1>Meu Currículo</h1>
-        <p>Desenvolvedor Web em Formação</p>
-    </section>
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Tenho 38 anos e estou aprendendo desenvolvimento web full-stack. Apaixonado por tecnologia e resolução de problemas.</p>
-    </section>
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML5 (em aprendizado)</li>
-            <li>Git e GitHub</li>
-        </ul>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-</main>
+        <section id="home">
+            <h1>Meu Currículo</h1>
+            <p>Desenvolvedor Web em Formação</p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Tenho 38 anos e estou aprendendo desenvolvimento web full-stack. Apaixonado por tecnologia e resolução de problemas.</p>
+            <p>Iniciei minha jornada em <time datetime="2025-05-16">Maio de 2025</time>.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5 (incluindo tags semânticas e formulários)</li>
+                <li>Git e GitHub</li>
+            </ul>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="duvida">Dúvida</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2025 Meu Nome. Todos os direitos reservados.</p>
+        <p>© 2025 Kaio Kampos. Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
 </body>
