@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Propriedades CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tags.html">Tags HTML</a></li>
+                <li><a href="#css">Propriedades CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="css">
+            <h1>Guia de Propriedades CSS</h1>
+            <p>Este documento lista as principais propriedades CSS, suas funções e exemplos práticos para consulta durante o aprendizado de desenvolvimento web.</p>
+
+            <h2>Seletores</h2>
+            <ul>
+                <li>
+                    <strong>Seletor de Tag:</strong>
+                    <p>Aplica estilos a uma tag HTML específica.</p>
+                    <p>Exemplo: <code>h1 { color: blue; }</code></p>
+                    <p>Demonstração: <h1 style="color: blue;">Título Azul</h1></p>
+                </li>
+                <li>
+                    <strong>Seletor de Classe:</strong>
+                    <p>Aplica estilos a elementos com uma classe específica.</p>
+                    <p>Exemplo: <code>.destaque { background-color: yellow; }</code></p>
+                    <p>Demonstração: <span style="background-color: yellow;">Texto Destacado</span></p>
+                </li>
+                <li>
+                    <strong>Seletor de ID:</strong>
+                    <p>Aplica estilos a um elemento com um ID específico.</p>
+                    <p>Exemplo: <code>#unico { font-size: 20px; }</code></p>
+                    <p>Demonstração: <p id="unico" style="font-size: 20px;">Texto Único</p></p>
+                </li>
+            </ul>
+
+            <h2>Cores</h2>
+            <ul>
+                <li>
+                    <strong>color:</strong>
+                    <p>Define a cor do texto.</p>
+                    <p>Exemplo: <code>p { color: #FF0000; }</code></p>
+                    <p>Demonstração: <p style="color: #FF0000;">Texto Vermelho</p></p>
+                </li>
+                <li>
+                    <strong>background-color:</strong>
+                    <p>Define a cor de fundo.</p>
+                    <p>Exemplo: <code>div { background-color: rgb(0, 255, 0); }</code></p>
+                    <p>Demonstração: <div style="background-color: rgb(0, 255, 0); padding: 5px;">Fundo Verde</div></p>
+                </li>
+            </ul>
+
+            <h2>Propriedades de Texto</h2>
+            <ul>
+                <li>
+                    <strong>font-family:</strong>
+                    <p>Define a fonte do texto.</p>
+                    <p>Exemplo: <code>p { font-family: Arial, sans-serif; }</code></p>
+                    <p>Demonstração: <p style="font-family: Arial, sans-serif;">Texto em Arial</p></p>
+                </li>
+                <li>
+                    <strong>font-size:</strong>
+                    <p>Define o tamanho da fonte.</p>
+                    <p>Exemplo: <code>h2 { font-size: 24px; }</code></p>
+                    <p>Demonstração: <h2 style="font-size: 24px;">Título Grande</h2></p>
+                </li>
+                <li>
+                    <strong>font-weight:</strong>
+                    <p>Define a espessura da fonte.</p>
+                    <p>Exemplo: <code>span { font-weight: bold; }</code></p>
+                    <p>Demonstração: <span style="font-weight: bold;">Texto Negrito</span></p>
+                </li>
+                <li>
+                    <strong>text-align:</strong>
+                    <p>Alinha o texto.</p>
+                    <p>Exemplo: <code>p { text-align: center; }</code></p>
+                    <p>Demonstração: <p style="text-align: center;">Texto Centralizado</p></p>
+                </li>
+                <li>
+                    <strong>text-decoration:</strong>
+                    <p>Adiciona decoração ao texto (sublinhado, riscado).</p>
+                    <p>Exemplo: <code>a { text-decoration: none; }</code></p>
+                    <p>Demonstração: <a style="text-decoration: none;">Link sem Sublinhado</a></p>
+                </li>
+            </ul>
+
+            <h2>Modelo de Caixa</h2>
+            <ul>
+                <li>
+                    <strong>margin:</strong>
+                    <p>Define a margem externa.</p>
+                    <p>Exemplo: <code>div { margin: 20px; }</code></p>
+                    <p>Demonstração: <div style="margin: 20px; border: 1px solid black;">Caixa com Margem</div></p>
+                </li>
+                <li>
+                    <strong>padding:</strong>
+                    <p>Define o preenchimento interno.</p>
+                    <p>Exemplo: <code>div { padding: 15px; }</code></p>
+                    <p>Demonstração: <div style="padding: 15px; border: 1px solid black;">Caixa com Preenchimento</div></p>
+                </li>
+                <li>
+                    <strong>border:</strong>
+                    <p>Define bordas.</p>
+                    <p>Exemplo: <code>div { border: 2px solid blue; }</code></p>
+                    <p>Demonstração: <div style="border: 2px solid blue; padding: 5px;">Caixa com Borda</div></p>
+                </li>
+                <li>
+                    <strong>width:</strong>
+                    <p>Define a largura.</p>
+                    <p>Exemplo: <code>div { width: 200px; }</code></p>
+                    <p>Demonstração: <div style="width: 200px; border: 1px solid black;">Largura 200px</div></p>
+                </li>
+                <li>
+                    <strong>height:</strong>
+                    <p>Define a altura.</p>
+                    <p>Exemplo: <code>div { height: 100px; }</code></p>
+                    <p>Demonstração: <div style="height: 100px; border: 1px solid black;">Altura 100px</div></p>
+                </li>
+                <li>
+                    <strong>box-sizing:</strong>
+                    <p>Controla como largura e altura são calculadas.</p>
+                    <p>Exemplo: <code>div { box-sizing: border-box; }</code></p>
+                    <p>Demonstração: <div style="box-sizing: border-box; width: 200px; padding: 20px; border: 5px solid black;">Caixa com Box-Sizing</div></p>
+                </li>
+            </ul>
+
+            <h2>Exibição e Posicionamento</h2>
+            <ul>
+                <li>
+                    <strong>display:</strong>
+                    <p>Define como o elemento é exibido.</p>
+                    <p>Exemplo: <code>span { display: inline-block; }</code></p>
+                    <p>Demonstração: <span style="display: inline-block; width: 100px; border: 1px solid black;">Inline-Block</span></p>
+                </li>
+                <li>
+                    <strong>position:</strong>
+                    <p>Define o método de posicionamento.</p>
+                    <p>Exemplo: <code>div { position: relative; top: 10px; }</code></p>
+                    <p>Demonstração: <div style="position: relative; top: 10px; border: 1px solid black;">Deslocado 10px</div></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Kaio Kampos. Criado para aprendizado.</p>
+    </footer>
+</body>
+</html>
