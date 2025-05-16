@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Tags HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#tags">Tags HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tags">
+            <h1>Guia de Tags HTML</h1>
+            <p>Este documento lista as principais tags HTML, suas funções e exemplos práticos para consulta durante o aprendizado de desenvolvimento web.</p>
+
+            <h2>Estrutura Básica</h2>
+            <ul>
+                <li>
+                    <strong>&lt;!DOCTYPE html&gt;</strong>: Declara que o documento é HTML5. Vai no topo.<br>
+                    Exemplo: <code>&lt;!DOCTYPE html&gt;</code> (sem tag de fechamento).
+                </li>
+                <li>
+                    <strong>&lt;html&gt;</strong>: Contém todo o conteúdo da página. Define o idioma com <code>lang</code>.<br>
+                    Exemplo: <code>&lt;html lang="pt-BR"&gt;...&lt;/html&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;head&gt;</strong>: Inclui metadados (título, CSS, etc.).<br>
+                    Exemplo: <code>&lt;head&gt;&lt;title&gt;Minha Página&lt;/title&gt;&lt;/head&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;body&gt;</strong>: Contém o conteúdo visível (textos, imagens, etc.).<br>
+                    Exemplo: <code>&lt;body&gt;&lt;h1&gt;Olá&lt;/h1&gt;&lt;/body&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Metadados (dentro de &lt;head&gt;)</h2>
+            <ul>
+                <li>
+                    <strong>&lt;meta&gt;</strong>: Define metadados, como codificação ou responsividade.<br>
+                    Exemplo: <code>&lt;meta charset="UTF-8"&gt;</code> (suporta acentos).<br>
+                    Exemplo: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> (responsividade).
+                </li>
+                <li>
+                    <strong>&lt;title&gt;</strong>: Título da aba do navegador.<br>
+                    Exemplo: <code>&lt;title&gt;Meu Site&lt;/title&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;link&gt;</strong>: Conecta arquivos CSS.<br>
+                    Exemplo: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;script&gt;</strong>: Inclui JavaScript.<br>
+                    Exemplo: <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Conteúdo de Texto</h2>
+            <ul>
+                <li>
+                    <strong>&lt;h1&gt;</strong> a <strong>&lt;h6&gt;</strong>: Títulos, do maior ao menor.<br>
+                    Exemplo: <code>&lt;h1&gt;Título Principal&lt;/h1&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;p&gt;</strong>: Parágrafo.<br>
+                    Exemplo: <code>&lt;p&gt;Este é um texto.&lt;/p&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;strong&gt;</strong>: Texto em negrito (semântico).<br>
+                    Exemplo: <code>&lt;strong&gt;Atenção!&lt;/strong&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;em&gt;</strong>: Texto em itálico (semântico).<br>
+                    Exemplo: <code>&lt;em&gt;Ênfase&lt;/em&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;span&gt;</strong>: Agrupa texto para estilização.<br>
+                    Exemplo: <code>&lt;span class="destaque"&gt;Texto&lt;/span&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Listas</h2>
+            <ul>
+                <li>
+                    <strong>&lt;ul&gt;</strong>: Lista não ordenada (marcadores).<br>
+                    Exemplo: <code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;ol&gt;</strong>: Lista ordenada (números).<br>
+                    Exemplo: <code>&lt;ol&gt;&lt;li&gt;Passo 1&lt;/li&gt;&lt;li&gt;Passo 2&lt;/li&gt;&lt;/ol&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;li&gt;</strong>: Item de lista.<br>
+                    Exemplo: <code>&lt;li&gt;Maçã&lt;/li&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Links e Mídia</h2>
+            <ul>
+                <li>
+                    <strong>&lt;a&gt;</strong>: Cria links.<br>
+                    Exemplo: <code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code>.<br>
+                    Exemplo: <code>&lt;a href="#contato"&gt;Contato&lt;/a&gt;</code> (link interno).
+                </li>
+                <li>
+                    <strong>&lt;img&gt;</strong>: Insere imagens.<br>
+                    Exemplo: <code>&lt;img src="foto.jpg" alt="Descrição"&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;video&gt;</strong>: Incorpora vídeos.<br>
+                    Exemplo: <code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;audio&gt;</strong>: Incorpora áudios.<br>
+                    Exemplo: <code>&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Estrutura Semântica</h2>
+            <ul>
+                <li>
+                    <strong>&lt;header&gt;</strong>: Cabeçalho da página.<br>
+                    Exemplo: <code>&lt;header&gt;&lt;h1&gt;Meu Site&lt;/h1&gt;&lt;/header&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;nav&gt;</strong>: Menu de navegação.<br>
+                    Exemplo: <code>&lt;nav&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;main&gt;</strong>: Conteúdo principal.<br>
+                    Exemplo: <code>&lt;main&gt;&lt;p&gt;Conteúdo&lt;/p&gt;&lt;/main&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;section&gt;</strong>: Seção temática.<br>
+                    Exemplo: <code>&lt;section&gt;&lt;h2&gt;Sobre&lt;/h2&gt;&lt;/section&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;article&gt;</strong>: Conteúdo independente.<br>
+                    Exemplo: <code>&lt;article&gt;&lt;h2&gt;Post&lt;/h2&gt;&lt;/article&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;aside&gt;</strong>: Conteúdo lateral.<br>
+                    Exemplo: <code>&lt;aside&gt;&lt;p&gt;Publicidade&lt;/p&gt;&lt;/aside&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;footer&gt;</strong>: Rodapé.<br>
+                    Exemplo: <code>&lt;footer&gt;&lt;p&gt;© 2025&lt;/p&gt;&lt;/footer&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Formulários</h2>
+            <ul>
+                <li>
+                    <strong>&lt;form&gt;</strong>: Cria formulários.<br>
+                    Exemplo: <code>&lt;form action="/enviar"&gt;&lt;input type="text"&gt;&lt;/form&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;input&gt;</strong>: Campo de entrada.<br>
+                    Exemplo: <code>&lt;input type="text" name="nome" placeholder="Nome"&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;textarea&gt;</strong>: Área de texto.<br>
+                    Exemplo: <code>&lt;textarea name="mensagem"&gt;&lt;/textarea&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;button&gt;</strong>: Botão.<br>
+                    Exemplo: <code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;label&gt;</strong>: Rótulo para campos.<br>
+                    Exemplo: <code>&lt;label for="nome"&gt;Nome:&lt;/label&gt;&lt;input id="nome"&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Tabelas</h2>
+            <ul>
+                <li>
+                    <strong>&lt;table&gt;</strong>: Cria tabela.<br>
+                    Exemplo: <code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Dado&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;tr&gt;</strong>: Linha da tabela.<br>
+                    Exemplo: <code>&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;td&gt;</strong>: Célula de dados.<br>
+                    Exemplo: <code>&lt;td&gt;Valor&lt;/td&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;th&gt;</strong>: Célula de cabeçalho.<br>
+                    Exemplo: <code>&lt;th&gt;Nome&lt;/th&gt;</code>.
+                </li>
+            </ul>
+
+            <h2>Outras</h2>
+            <ul>
+                <li>
+                    <strong>&lt;div&gt;</strong>: Contêiner genérico.<br>
+                    Exemplo: <code>&lt;div class="container"&gt;&lt;p&gt;Conteúdo&lt;/p&gt;&lt;/div&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;br&gt;</strong>: Quebra de linha.<br>
+                    Exemplo: <code>&lt;p&gt;Linha 1&lt;br&gt;Linha 2&lt;/p&gt;</code>.
+                </li>
+                <li>
+                    <strong>&lt;hr&gt;</strong>: Linha horizontal.<br>
+                    Exemplo: <code>&lt;hr&gt;</code>.
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Meu Nome. Criado para aprendizado.</p>
+    </footer>
+</body>
+</html>
